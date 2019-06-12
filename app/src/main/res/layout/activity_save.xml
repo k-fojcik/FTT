@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.kasia.fingertappingtest.activities.SaveActivity">
+
+    <EditText
+        android:id="@+id/filenameR"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/filenameL"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:onClick="onClickSaveBtn"
+        android:text="SAVE FILES" />
+
+    <Button
+        android:id="@+id/againBtn"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:onClick="onClickAgainBtn"
+        android:text="START TEST AGAIN" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:onClick="onClickBackBtn"
+        android:text="BACK TO START" />
+</LinearLayout>

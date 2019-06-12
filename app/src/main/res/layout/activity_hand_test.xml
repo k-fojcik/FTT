@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tapSpace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.kasia.fingertappingtest.activities.RightHandTest">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Put your phone on a flat surface.\n Use two fingers to alternately tap\n as fast as you can for 20 seconds."
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClickStartBtn"
+        android:text="START"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tapsInfo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Total taps:"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tapsCounter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:max="20"
+        android:progress="0"
+        android:scaleY="4" />
+
+    <LinearLayout
+        android:id="@+id/tapSpace2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="17mm"
+            android:layout_height="17mm"
+            android:layout_marginRight="4mm"
+            android:background="@drawable/button_bg_round"
+            android:text="TAP" />
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="17mm"
+            android:layout_height="17mm"
+            android:background="@drawable/button_bg_round"
+            android:text="TAP" />
+    </LinearLayout>
+
+</LinearLayout>
